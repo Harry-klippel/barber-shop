@@ -1,0 +1,472 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+:root {
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --color-primary-light: #f5eee6;
+  }
+  
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: var(--color-primary-light);
+}
+
+
+            /**********************
+            **      HOME         **
+            ***********************/
+
+
+.home {
+   
+    position: relative;
+    background-image: url(images/bg-home.jpg);
+    height: 100vh;      /*viewport height */ 
+    background-size: cover;   /* cover dimensiona a imagem, preservando sua proporção */
+    background-attachment: fixed;
+}
+
+.home .header {
+    padding:30px 0;
+}
+
+.home .header .nav {
+    display:flex;
+    justify-content: center;
+    
+}
+
+.home .header .nav ul {
+    display:flex;
+    list-style: none;
+}
+
+.home .header .nav ul li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+
+}
+
+.home .header .nav ul li a {
+    font-size: 12px;
+    text-decoration:none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    padding:20px;
+}
+
+.home .header .nav ul li a:hover {
+    color: var(--color-primary) ;
+    border-bottom: solid var(--color-primary);
+}
+
+.home .header .nav ul li a .logo {
+    margin: 0 10px;
+}
+
+
+            /**********************
+            **   HOME - BANNER   **
+            ***********************/
+
+.banner {
+    text-align: center;
+    top: 50%;
+    left: 47%;
+    width: 770px;
+    height: 280px;
+    margin-left: -340px;
+    position: absolute;
+    margin-top: -90px;
+
+}
+
+.home .banner .span {
+    display: block;
+}
+
+.slogan {
+    color: var(--color-primary);
+    font-size: 14x;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight:300;
+    padding-top:20px;
+
+
+}
+
+.banner h1 {
+    font-size: 120px;
+    color: white;
+}
+
+.slogan2 {
+    color: white;
+}
+
+
+            /************
+            **  ABOUT ***
+            ************/
+
+.about {
+    background-color: var(--color-primary);
+    
+}
+
+.about .container {
+    display:flex;
+    width: 1170px;
+    margin:0 auto;
+
+}
+
+.about .timing {
+    width: 33%;
+    padding: 20px;
+    position:relative;
+    margin-top:-50px;
+    
+
+    background-image: url(images/brush-big.jpg);
+    height: 750px;
+    
+}
+
+
+.about .timing .overlay {
+    background-color:rgba(0, 0, 0, 0.8);
+    text-align: center; 
+    padding: 40px 20px;
+    color:white;
+}
+
+.about .experience {
+    width: 66%;
+}
+
+.about .timing .icon-cut {
+    width:50px;
+
+}
+.about .timing .overlay h3 {
+    color: var(--color-primary);
+    font-size:30px;
+    border-bottom: 2px solid var(--color-primary);
+    width:fit-content;
+    margin: 0 auto 30px;
+}
+
+.about .timing .text{
+    color:white;
+    margin:10px;
+}
+
+.about .timing .text:after {
+   content: '•';
+   display:block;
+   font-size: 25px;
+   margin-top:10px;
+}
+
+.about .timing .text:last-of-type:after {
+    content:'|';
+}
+.about .timing .text h4 {
+    color:grey;
+    font-size:15px;
+    font-weight:400;
+
+}
+
+.about .timing  span {
+    font-size:15px;
+}
+
+.about .experience {
+    color:white;
+    margin-left: 7%;
+    margin-top:100px;
+
+}
+.about .experience .text {
+    display:flex;
+    justify-content:space-between;
+    margin:10px;
+}
+
+
+.about .experience h2 {
+    font-weight:400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display:block;
+    content:'';
+    width:100px;
+    height:3px;
+    background-color: #a38f78;
+    margin:20px 0;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size:17px;
+}
+
+
+            /************
+            **  ABOUT ***
+            ************/
+
+.services {
+    padding:100px 0;
+    text-align:center;
+    background-color:  var(--color-primary-light);
+}
+
+.services h2 {
+    color: var(--color-secondary);
+    font-weight:400;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.services .boxes {
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding:50px 30px;
+    margin:30px;
+}
+
+.services .box h4 {
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+
+.services .box p {
+    font-weight: 14px;
+    line-height:25px;
+    margin-top:20px;
+}
+
+            /************
+            **  FORM ****
+            ************/
+
+.appointment  {
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image: url(images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    padding-top:50px;
+    
+   
+}
+
+.appointment .container {
+    width: 1170px;
+    margin:30px auto; 
+    
+}
+.appointment h2 {
+    font-size: 50px;
+    font-weight:400;
+    color: var(--color-primary-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.appointment img {
+    margin:0 auto 10px auto;
+    display:block;
+} 
+
+.appointment form {
+    margin-top:80px;
+}
+.appointment .personal-date {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+
+.appointment .personal-date .wrapp {
+    width:100%;
+    margin-right: 50px;
+}
+
+.appointment .personal-date .wrapp:last-of-type {
+    margin-right: 0;
+}
+
+.appointment label {
+    color: var(--color-primary-light);
+    display:block;
+    font-size:14px;
+    margin-bottom:2px;
+}
+.appointment .personal-date input,
+.appointment .personal-date select
+{
+    padding: 10px;
+     outline:none;
+     border:none;
+     width:100%;
+     border-radius:3px;
+}
+
+.appointment textarea {
+    height: 100px;
+    padding: 10px;
+    outline:none;
+    border:none;
+    width:80%;
+    border-radius:3px;
+}
+
+.appointment button {
+    padding:12px 30px;
+    color: white;
+    background-color: var(--color-secondary);
+    border:none;
+    margin-top: 10px;
+}
+
+            /************
+            **  Gallery **
+            **************/
+
+.gallery {
+    background-color: var(--color-primary-light);
+    padding:100px 0;
+    margin-bottom: 150px;
+}
+
+.gallery .container {
+    width: 1170px;
+    margin:0 auto;
+    height: 100vh;
+}
+.gallery h2 {
+    font-size: 50px;
+    font-weight:400;
+    color: var(--color-secondary);
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.gallery img {
+    margin:0 auto;
+    display:block;
+} 
+
+.gallery .gallery-wrapper  {
+   margin:40px auto;
+   display:flex;
+   flex-direction:column;
+   height: 100vh;
+   flex-wrap: wrap;
+   width:800px;
+
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin:6px;
+    width:33%;
+}
+.gallery .gallery-wrapper div img {
+    width:100%;
+
+}
+
+            /************
+            **  Location ****
+            ************/
+ 
+.location {
+background-image: url(images/bg-location.jpg);
+background-size: cover;
+padding:100px 0;
+
+
+}
+
+.location .container {
+    width: 1170px;
+    margin:0 auto; }
+
+  .location .head {
+    background-color: #191919;
+    padding: 20px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+
+  .location .head .info {
+    display: flex;
+    align-items:center;
+    
+    
+  }
+
+  .location .head .info .icon {
+    margin-right:1px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-primary);
+    border-radius:100%;
+    padding:10px;
+    width:50px;
+    height: 50px;
+    
+  }
+
+  .location .head .info .text span {
+    display:block;
+    font-size:13px;
+  }
+
+  .location .head .info .text span:first-child {
+    color:silver;
+  }
+
+  .location .head .info .text span:last-child {
+    color: white;
+  }
+
+  .location .map,
+  .location .map iframe {
+    width:100%;
+  }
+
+  .fotter {
+    background-color: #191919;
+    padding:30px;
+    font-size: 13px;
+    color:white;
+    text-align:center;
+  }
