@@ -345,12 +345,50 @@ body {
 }
 
 .appointment button {
-    padding:12px 30px;
-    color: white;
-    background-color: var(--color-secondary);
-    border:none;
-    margin-top: 10px;
+display:inline-block;
+min-width: 180px;
+padding:15px 10px;
+background-color: var(--color-secondary);
+font-weight: 400;
+color: white;
+border:none;
+letter-spacing:1px;
+cursor:pointer;
+transition: background-color .25s, padding-right .25s;
 }
+
+.appointment button:hover {
+    background-color: hsl(0, 28%, 11%);
+    padding-right:35px;
+}
+
+.appointment button::after {
+    content: '→';
+    top:50%;
+    transform: translate(-17px, -50%);
+    margin-left: 4px;
+    font-family: 'fontAwesome';
+    font-weight: 100;
+    color: white;
+    opacity: 0;
+    transition: transform .25s, opacity .25s;
+}
+
+.appointment button:hover::after {
+    transform: translate(5px, -50%);
+    opacity:5;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
             /************
             **  Gallery **
@@ -470,3 +508,13 @@ padding:100px 0;
     color:white;
     text-align:center;
   }
+
+
+
+
+
+
+
+
+
+
